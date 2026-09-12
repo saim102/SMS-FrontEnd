@@ -103,14 +103,13 @@ function App() {
 
   return (
     <>
+       <h1>Student Management System</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" name='name' value={fromdata.name} placeholder='Enter your name'  onChange={hanldeChange} />
         <input type="text" name='email' value={fromdata.email} placeholder='Enter your email' onChange={hanldeChange} />
         <input type="text" name='course' value={fromdata.course} placeholder='Enter your course' onChange={hanldeChange}/>
         <button type='submit'>Add Student</button>
       </form>
-
-      <h1>Student Management System</h1>
       { 
         students.map(student => (
           <div key={student._id}>
